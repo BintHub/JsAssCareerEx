@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee base</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body id="body">
+    <!-- SIDE BAR -->
+    <div class="sidelist">
+      <div class="logo">
+        <img src="./img/image 4.png" alt="logo" />
+        <img src="./img/Text.png" alt="text">
+      </div>
+      <ul class="side-menu">
+        <li>
+          <a href="#"><i class="bx bx-home-circle icon"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="./role.html"><i class="bx bx-briefcase icon"></i>Roles</a>
+        </li>
+        <li>
+            <a href="#" class="active"><i class='bx bx-group icon'></i>Employees<i class='bx bx-down-arrow-alt arrow-do'></i></a>
+          </li>
+          <ul class="side-dropdown" id="drop">
+            <li ><a href="#" id="brown">All employee</a></li>
+            <li><a href="#">Recent hires</a></li>
+          </ul>
+        <li>
+          <a href="#"><i class="bx bx-receipt icon"></i>Payrolls</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-pie-chart-alt-2 icon"></i>Reports</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-cog icon"></i>Settings</a>
+        </li>
+      </ul>
+    </div>
+    <section id="bar">
+    <nav>
+      <form action="#">
+       <div class="form-group">
+      <input type="text" placeholder="Search anything here...">
+       </div>
+      </form>
+      <div class="profile">
+      <a href="#" class="nav-link"><i class='bx bx-cog icon'></i></a>
+      <a href="#" class="nav-link"><i class='bx bx-bell icon'></i><a>
+       <img src="./img/Avatar.png" alt=""/>
+      </div>
+    </nav>
+    </section>
+    <section class=eBar>
+      <div class="employ">
+        <h1>Employees</h1><i class='bx bx-help-circle icon'></i><span class="badge">100</span>
+      </div>
+      <div class="press">
+        <button class="btn"><i class='bx bx-export icon'></i><span>Export</span></button>
+        <button class="btn1" id="addEmloyee"><i class='bx bx-plus-circle icon'></i><span>New Employee</span></button>
+      </div>
+    </section>
+    <div class="employe">
+      <ul class="employee">
+        <li ><a href="#">All employee</a></li>
+        <li ><a href="#">Teams</a></li>
+        <li ><a href="#">Roles</a></li>
+      </ul>
+    </div>
+    <!--search bar-->
+    <section class="search">
+        <form action="#">
+         <div class="form-group">
+        <input type="text" placeholder="Search Employee by name, role, ID or any related keywords..">
+         </div>
+        </form>
+        <div class="filter-side">
+        <button class="btn"><i class='bx bx-filter'></i><span>Filter</span></button>
+        <a href="#" class="link"><i class='bx bx-list-ul icon'></i></a>
+        <a href="#" class="link"><i class='bx bx-grid-alt icon'></i></a>
+        </div>
+      </section>
+<!-- TABLE -->
+      <section class="info">
+      <table class="info-table" id="datta">
+        <thead>
+          <tr>
+            <th><input type="checkbox" class="checkbox"><label for="selectAll"></label></th>
+            <th style="width: 25%;">Name</th>
+            <th>Employee ID</th>
+            <th>Role<span><i class='bx bx-help-circle icon'></i></span></th>
+            <th>Status</th>
+            <th style="width: 25%;">Teams</th>
+            <th></th>
+          </tr>
+       </thead>
+       <tbody id="datta">
+         <tr>
+           <td><input type="checkbox" id="checkbox1"  value="1"><label for="selectAll"></label></td>
+           <td><img src="./img/team.png"/>Tanner Finsha<p class="box">@Tannerfisher@gmail.com</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Product Designer <p class="boxa">Full time</p></td>
+           <td class="dot"><span><i class='bx bxs-circle icon'></i>Active</span></td>
+           <td class="split"><p class="status">Maketing</p><p class="status2">Design</p><p class="status">+1</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox2" value="2"><label for="selectAll"></label></td>
+           <td><img src="./img/team2.png"/>Emeto  Winner<p class="box">@Emetowinner@gmail.com</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Product Designer <p class="boxa">Contract</p></td>
+           <td class="dot"><span><i class='bx bxs-circle icon'></i>Active</span></td>
+           <td class="split"><p class="status">Product</p><p class="status2">Design</p><p class="status">+1</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox3"  value="3"><label for="selectAll"></label></td>
+           <td><img src="./img/team0.png"/>Tanner Finsha<p class="box">@Tannerfisher@gmail.com</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Product Designer <p class="boxa">Associate</p></td>
+           <td class="inactive"><span><i class='bx bxs-circle icon'></i>Inactive</span></td>
+           <td class="split"><p class="status">Product</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox4"  value="4"><label for="selectAll"></label></td>
+           <td><img src="./img/team3.png"/>James Muriel<p class="box">JamesMuriel@Aerten.finance</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Product Designer <p class="boxa">Full time</p></td>
+           <td class="inactive"><span><i class='bx bxs-circle icon'></i>Inactive</span></td>
+           <td class="split"><p class="status">Engineering</p><p class="status2">Design</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox5"  value="5"><label for="selectAll"></label></td>
+           <td><img src="./img/team4.png"/>Emeto  Winner<p class="box">Emetowinner@gmail.com</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Frontend Engineer <p class="boxa">Full time</p></td>
+           <td class="inactive"><span><i class='bx bxs-circle icon'></i>Inactive</span></td>
+           <td class="split"><p class="status">Product</p><p class="status2">Design</p><p class="status">+3</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox6"  value="6"><label for="selectAll"></label></td>
+           <td><img src="./img/team5.png"/>Tassy Omah<p class="box">Tassyomah@gmail.com</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Backend Engineer <p class="boxa">Part time</p></td>
+           <td class="dot"><span><i class='bx bxs-circle icon'></i>Active</span></td>
+           <td class="split"><p class="status">Engineering</p><p class="status2">Design</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox7"  value="7"><label for="selectAll"></label></td>
+           <td><img src="./img/team3.png"/>James Muriel<p class="box">JamesMuriel@Aerten.finance</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Backend Engineer  <p class="boxa">Part time</p></td>
+           <td class="dot"><span><i class='bx bxs-circle icon'></i>Active</span></td>
+           <td class="split"><p class="status">Product</p><p class="status2">Design</p><p class="status">+6</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+         <tr>
+           <td><input type="checkbox" id="checkbox8"  value="8"><label for="selectAll"></label></td>
+           <td><img src="./img/team4.png"/>Emeto  Winner<p class="box">Emetowinner@gmail.com</p></td>
+           <td><P class="id">#23454GH6J7YT6</P></td>
+           <td>Sales specialist <p class="boxa">Part time</p></td>
+           <td class="inactive"><span><i class='bx bxs-circle icon'></i>Inactive</span></td>
+           <td class="split"><p class="status">Product</p><p class="status2">Design</p><p class="status">+14</p></td>
+           <td><a href="#"><span><i class='bx bx-dots-vertical-rounded'></i></span></a></td>
+         </tr>
+      </tbody>
+  </table>
+</section>
+<footer class="eBar">
+<div> 
+  <button class="btn"><i class='bx bx-left-arrow-alt'></i><span>Previous</span></button>
+</div>
+<div> 
+  <span class="badge active">1</span>
+  <span class="badge">2</span>
+  <span class="badge">3</span>
+  <span class="badge"><i class='bx bx-dots-horizontal-rounded'></i></span>
+  <span class="badge">8</span>
+  <span class="badge">9</span>
+  <span class="badge">10</span>
+</div>
+<div class="arrow"> 
+  <button class="btn"><span>Next</span><i class='bx bx-right-arrow-alt'></i></button>
+</div>
+</footer>
+<!-- add emolpyee modal -->
+<section class="main-modal" id="userForm">
+  <div class="modal">
+   <img src="./img/exit.png" alt="exitclick" class="custom"/>
+   <div class="suit">
+     <img src="./img/modal icon.png" alt="case"/>
+   </div>
+   <div class="container" id="userForm">
+     <div class="row active">
+       <div class="wrapper">
+         <img src="./img/role.png" />
+       </div>
+       <label for="name">Name</label>
+       <input type="text" name="" id="name" />
+     </div>
+     <div class="row">
+       <label for="name">EmployeeID</label>
+       <input type="text" name="" id="emp" />
+      </div>
+     <div class="row">
+       <label for="name">Role</label>
+       <input type="text" name="" id="rol" />
+      </div>
+     <div class="row">
+       <label for="name">Status</label>
+       <input type="text" name="" id="status" />
+      </div>
+     <div class="row">
+       <label for="name">teams</label>
+       <input type="text" name="" id="team" />
+      </div>
+      <div class="row">
+        <button class="btn1" id="sbtn">Add Employee</button>
+       </div>
+    </div>
+   </div>
+  </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
